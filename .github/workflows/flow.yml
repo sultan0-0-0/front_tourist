@@ -1,0 +1,44 @@
+name: Flow
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Install modules
+        run: cd ./client && npm i
+
+      - name: eslint client
+        run: cd ./client && npm run eslint
+      
+      - name: jest test client
+        run: cd ./client && npm run test
+      
+      - name: Install modules back
+        run: cd ./backend && npm i
+
+      - name: Install modules back
+        run: cd ./backend && npm run eslint
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # DISABLE_ERRORS: true
+          VALIDATE_MARKDOWN: false
+
+

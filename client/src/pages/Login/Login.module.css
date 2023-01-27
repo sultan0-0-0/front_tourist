@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 80rem;
+  color: #454545;
+  background: rgb(2 0 36);
+  background: linear-gradient(90deg, rgb(126 126 120) 0%, rgb(168 159 115) 35%, rgb(228 214 87) 100%);
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  position: absolute;
+  top: 30rem;
+  left: 50%;
+  z-index: 999;
+  width: 30rem;
+  padding: 2rem 3rem;
+  color: #fabd02;
+  text-align: center;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 64px 35px 74px 9px rgb(45 45 45 / 52%);
+  transform: translate(-50%, -50%);
+}
+
+.content header {
+  align-items: centere;
+  margin: 2rem;
+  color: black;
+  font-weight: 400;
+  font-size: 2.7rem;
+  font-family: Helvetica, sans-serif;
+  border-radius: 2rem;
+}
+
+form {
+  margin: 1rem;
+  padding: 0;
+}
+
+.field input {
+  margin-top: 0.6rem;
+  margin-left: 0;
+  padding-left: 1rem;
+  line-height: 3rem;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 74px 10px rgb(45 45 45 / 21%);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  opacity: 0.5;
+}
+
+.field textarea {
+  margin: 0.3rem;
+  line-height: 2.5rem;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 74px 10px rgb(45 45 45 / 21%);
+}
+
+input[type="submit"] {
+  width: 11rem;
+  margin: 0.6rem;
+  padding: 0.25rem;
+  color: white;
+  font-size: 1rem;
+  background: #fabd02;
+  box-shadow: 0 0 74px 10px rgb(45 45 45 / 21%);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  color: #454545;
+  background: #fae39d;
+  box-shadow: 0 0 74px 10px rgb(45 45 45 / 21%);
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+}
+
+.button {
+  color: white;
+  font-size: 1rem;
+  background: #fabd02;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #454545;
+  background: #fae39d;
+  box-shadow: 0 0 0 0;
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+}
+
+.link {
+  position: relative;
+  left: 50%;
+  width: 5rem;
+  transform: translateX(-50%);
+}
+
+.github,
+.vk {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+  background: #454545;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.vk {
+  background: #4649d7;
+}
+
+.github a,
+.vk a {
+  color: white;
+}
+
+.login {
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #454545;
+  font-size: 0.8rem;
+}
+
+.register {
+  padding: 1.2rem 0;
+  color: black;
+}
+
+.login-now {
+  display: block;
+  color: #454545;
+  line-height: 2rem;
+}
+
+.login-now:hover {
+  color: #fabd02;
+  background-color: white;
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+}
